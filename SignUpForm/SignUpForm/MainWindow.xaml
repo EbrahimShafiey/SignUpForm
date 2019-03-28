@@ -1,0 +1,69 @@
+﻿<Window x:Class="SignUpForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignUpForm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="686.005" Width="697.958" Background="{x:Null}">
+    <Grid Background="#FFFCD2ED">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="327*"/>
+            <ColumnDefinition Width="327*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="657" Margin="0.4,0,0,-0.2" VerticalAlignment="Top" Width="345">
+            <Border.Background>
+                <ImageBrush ImageSource="091cda666067b58568d45d6c7e4c88b3.jpg"/>
+            </Border.Background>
+            <Label Content="Sign in with &#xA;Social network" HorizontalAlignment="Left" Height="127" Margin="29.2,34.2,0,0" VerticalAlignment="Top" Width="299" FontSize="48" FontFamily="Goudy Old Style" Foreground="#FFF9F9F9"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="74" Margin="309,270,0,0" VerticalAlignment="Top" Width="74" CornerRadius="100" Grid.ColumnSpan="2" Background="#FFD4D4D4" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Label Content="or" HorizontalAlignment="Left" Height="38" Margin="14.2,12.2,0,0" VerticalAlignment="Top" Width="54" FontFamily="Ravie" FontSize="24" Foreground="#FF575757"/>
+        </Border>
+        <Button Content="Log in with Facebook" HorizontalAlignment="Left" Height="37" Margin="57.4,207,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1" Foreground="White" FontSize="16" RenderTransformOrigin="0.5,0.5" Padding="1,1,-33,1">
+            <Button.Background>
+                <ImageBrush ImageSource="facebook3500.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Log in with Twitter" HorizontalAlignment="Left" Height="39" Margin="57.4,291,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1" Click="Button_Click" FontSize="16" Foreground="White" Padding="1,1,-16,1">
+            <Button.Background>
+                <ImageBrush ImageSource="twitter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Log in with Google+" HorizontalAlignment="Left" Height="39" Margin="57.4,377,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1" Foreground="#FFFCFCFC" Padding="1,1,-28,1" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="google+.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Sign up" HorizontalAlignment="Left" Height="75" Margin="34,36,0,0" VerticalAlignment="Top" Width="299" FontSize="48" FontFamily="Goudy Old Style" Foreground="#FFF9F9F9"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="67,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" Background="{x:Null}" FontSize="18" Foreground="#FF060606" BorderBrush="#FFAB8CD1"  />
+        <Label Content="Please enter your name:" HorizontalAlignment="Left" Height="23" Margin="67,135,0,0" VerticalAlignment="Top" Width="219" FontFamily="Ink Free" Foreground="#FF44947F"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="67,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" Background="{x:Null}" FontSize="18" Foreground="#FF060606" BorderBrush="#FFAB8CD1"  />
+        <Label Content="Please enter your lastname:" HorizontalAlignment="Left" Height="23" Margin="67,207,0,0" VerticalAlignment="Top" Width="219" FontFamily="Ink Free" Foreground="#FF44947F"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="67,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" Background="{x:Null}" FontSize="18" Foreground="#FF060606" BorderBrush="#FFAB8CD1"  />
+        <Label Content="Please enter your email:" HorizontalAlignment="Left" Height="23" Margin="67,291,0,0" VerticalAlignment="Top" Width="219" FontFamily="Ink Free" Foreground="#FF44947F"/>
+        <Label Content="Please enter your password:" HorizontalAlignment="Left" Height="23" Margin="67,377,0,0" VerticalAlignment="Top" Width="219" FontFamily="Ink Free" Foreground="#FF44947F"/>
+        <Label Content="Please re-enter your password:" HorizontalAlignment="Left" Height="23" Margin="67,462,0,0" VerticalAlignment="Top" Width="219" FontFamily="Ink Free" Foreground="#FF44947F"/>
+        <PasswordBox HorizontalAlignment="Left" Height="36" Margin="67,400,0,0" VerticalAlignment="Top" Width="219" Background="{x:Null}" FontSize="18"/>
+        <PasswordBox HorizontalAlignment="Left" Height="36" Margin="67,485,0,0" VerticalAlignment="Top" Width="219" Background="{x:Null}" FontSize="18"/>
+        <Button Content="Sign up" HorizontalAlignment="Left" Height="45" Margin="67,554,0,0" VerticalAlignment="Top" Width="219" FontSize="16" Background="#FFEDB5E9"/>
+        <Button Content="Log in with Google" HorizontalAlignment="Left" Height="39" Margin="57.4,462,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1" Foreground="White" Padding="1,1,-28,1" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="google b.png"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="87" Margin="42.4,537,0,0" VerticalAlignment="Top" Width="261" Grid.Column="1" CornerRadius="15" Background="White">
+            <Image Margin="0.2,0.2,172,-1.4" Source="logo.png" Stretch="Fill"/>
+        </Border>
+        <Label Content="Thank you for using!&#xD;&#xA;Designer : Ebrahim Shafiey&#xD;&#xA;Github : @ebrahimshafiey&#xD;&#xA;" HorizontalAlignment="Left" Height="58" Margin="132.4,551,0,0" VerticalAlignment="Top" Width="161" Grid.Column="1"/>
+    </Grid>
+</Window>
